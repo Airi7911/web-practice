@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -7,13 +8,40 @@ module.exports = {
   },
   output: {
     filename: "web-practice.bundle.js",
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "dist"),
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.ejs$/,
+        use: [
+          /**
+           * HtmlLoader -> TemplateEjsLoader
+           */ 
+          "html-loader",
+          "template-ejs-loader",
+        ],
+      },
+    ]
+  },
+  
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src", "source.ejs"),
+      filename: "target.html",
+      minify: {
+        collapseWhitespace: true,
+        preserveLineBreaks: true,
+      },
+    }),
+  ],
+
   resolve: {
     extensions: [".js"],
   },
   devServer: {
     open: true,
-    static: path.join(__dirname, "public"),
+    static: path.join(__dirname, "dist"),
   },
 };

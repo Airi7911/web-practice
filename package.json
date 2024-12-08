@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "sass": "sass src/style.scss css/style.css",
     "webpack": "webpack --config webpack.config.js",
-     "serve": "webpack serve --config webpack.config.js"
+    "serve": "webpack serve --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/Airi7911/web-practice#readme",
   "devDependencies": {
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
     "sass": "^1.82.0",
+    "template-ejs-loader": "^0.9.4",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
