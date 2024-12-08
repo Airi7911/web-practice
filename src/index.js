@@ -1,3 +1,4 @@
-import { Hello } from "./hello";
+import $ from "jquery";
+import { clickEvent } from "./button/event";
 
-new Hello("taro").greet();
+$(".button").on("click", clickEvent);
