@@ -1,0 +1,12 @@
+@use './variables';
+@use './mixin';
+.main {
+  display: flex;
+  &--column {
+    flex-direction: column;
+    color: variables.$blue;
+  }
+  &__title {
+    @include mixin.title()
+  }
+}
