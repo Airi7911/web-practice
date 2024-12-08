@@ -1,0 +1,22 @@
+{
+  "name": "web-practice",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Airi7911/web-practice.git"
+  },
+  "keywords": [
+    "\"\""
+  ],
+  "author": "\"\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Airi7911/web-practice/issues"
+  },
+  "homepage": "https://github.com/Airi7911/web-practice#readme"
+}
