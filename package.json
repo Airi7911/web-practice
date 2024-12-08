@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Airi7911/web-practice/issues"
   },
-  "homepage": "https://github.com/Airi7911/web-practice#readme"
+  "homepage": "https://github.com/Airi7911/web-practice#readme",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
