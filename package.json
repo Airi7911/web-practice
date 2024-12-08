@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "sass": "sass src/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/Airi7911/web-practice#readme",
   "devDependencies": {
+    "sass": "^1.82.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
   }
