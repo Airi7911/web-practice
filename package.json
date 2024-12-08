@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "sass": "sass src/style.scss css/style.css"
+    "sass": "sass src/style.scss css/style.css",
+    "webpack": "webpack --config webpack.config.js",
+     "serve": "webpack serve --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   "devDependencies": {
     "sass": "^1.82.0",
     "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
     "jquery": "^3.7.1"
